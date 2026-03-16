@@ -7,7 +7,6 @@
 
 # epubJS — User Manual
 
->**⚠️⚠️epubJS.min.js is broken 💔**
 
 A client-side JavaScript library for building valid EPUB 3 files directly in the browser. No server required.
 
