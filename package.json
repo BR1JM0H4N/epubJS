@@ -1,0 +1,10 @@
+{
+  "name": "epubjs",
+  "version": "1.0.0",
+  "description": "Client-side EPUB 3 builder library",
+  "main": "epub.js",
+  "browser": "epubJS.min.js",
+  "files": ["epubJS.js", "epubJS.min.js", "README.md"],
+  "keywords": ["epub", "ebook", "epub3", "browser"],
+  "license": "MIT"
+}
