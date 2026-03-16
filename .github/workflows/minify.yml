@@ -18,7 +18,7 @@ jobs:
 
       - name: Minify with Terser
         run: |
-          npx terser epub.js \
+          npx terser epubJS.js \
             --compress \
               drop_console=true,\
               passes=2 \
@@ -26,12 +26,12 @@ jobs:
             --mangle-props \
               regex='^_[a-z]' \
             --format \
-              preamble='/*! epub.js | @br1jm0h4n/epubjs | MIT */' \
+              preamble='/*! epubJS.js | @br1jm0h4n/epubjs | MIT */' \
             --output epubJS.min.js
 
       - name: Show size diff
         run: |
-          ORIG=$(wc -c < epub.js)
+          ORIG=$(wc -c < epubJS.js)
           MINI=$(wc -c < epubJS.min.js)
           PCT=$(awk "BEGIN { printf \"%.1f\", (1 - $MINI/$ORIG) * 100 }")
           echo "epub.js     : $ORIG bytes"
@@ -43,5 +43,5 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add epubJS.min.js
-          git diff --staged --quiet || git commit -m "build: minify epub.js → epubJS.min.js"
+          git diff --staged --quiet || git commit -m "build: minify epubJS.js → epubJS.min.js"
           git push
