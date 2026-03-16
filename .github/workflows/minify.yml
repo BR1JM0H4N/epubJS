@@ -20,7 +20,7 @@ jobs:
           node-version: 20
 
       - name: Minify with Terser
-        run: npx terser epubJS.js --compress --mangle --output epubJS.min.js
+        run: npx terser epubJS.js --output epubJS.min.js
 
       - name: Show size diff
         run: |
