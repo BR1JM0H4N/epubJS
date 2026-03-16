@@ -4,7 +4,10 @@
   "description": "Client-side EPUB 3 builder library",
   "main": "epub.js",
   "browser": "epubJS.min.js",
-  "files": ["epubJS.js", "epubJS.min.js", "README.md"],
+  "files": ["epub.js", "epubJS.min.js", "MANUAL.md"],
   "keywords": ["epub", "ebook", "epub3", "browser"],
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  }
 }
