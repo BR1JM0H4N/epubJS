@@ -1,13 +1,36 @@
 {
-  "name": "epubjs",
+  "name": "@br1jm0h4n/epubjs",
   "version": "1.0.0",
-  "description": "Client-side EPUB 3 builder library",
+  "description": "Client-side EPUB 3 builder — create valid EPUB files directly in the browser",
   "main": "epub.js",
   "browser": "epubJS.min.js",
-  "files": ["epub.js", "epubJS.min.js", "MANUAL.md"],
-  "keywords": ["epub", "ebook", "epub3", "browser"],
+  "files": [
+    "epub.js",
+    "epubJS.min.js",
+    "MANUAL.md"
+  ],
+  "keywords": [
+    "epub",
+    "epub3",
+    "ebook",
+    "browser",
+    "client-side",
+    "jszip"
+  ],
+  "author": "BR1JM0H4N",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BR1JM0H4N/epubjs.git"
+  },
+  "homepage": "https://github.com/BR1JM0H4N/epubjs#readme",
+  "bugs": {
+    "url": "https://github.com/BR1JM0H4N/epubjs/issues"
+  },
   "scripts": {
     "test": "echo \"No tests yet\" && exit 0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
