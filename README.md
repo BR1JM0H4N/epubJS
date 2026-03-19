@@ -17,7 +17,7 @@ A client-side JavaScript library for building valid EPUB 3 files directly in the
 [![npm version](https://img.shields.io/npm/v/epubjs)](https://www.npmjs.com/package/epubjs)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/BR1JM0H4N/epubit/.github/workflows/ci.yml?branch=main)](https://github.com/BR1JM0H4N/epubit/actions)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/BR1JM0H4N/epubit/graphs/commit-activity)
-[![npm](https://img.shields.io/npm/v/@br1jm0h4n/epubjs?style=flat-square&logo=npm&logoColor=white&label=npm&color=CB3837)](https://www.npmjs.com/package/epubit)
+[![npm](https://img.shields.io/npm/v/@br1jm0h4n/epubit?style=flat-square&logo=npm&logoColor=white&label=npm&color=CB3837)](https://www.npmjs.com/package/epubit)
 <!--[![npm downloads](https://img.shields.io/npm/dm/@br1jm0h4n/epubjs?style=flat-square&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@br1jm0h4n/epubjs)
 [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/@br1jm0h4n/epubjs?style=flat-square&logo=jsdelivr&logoColor=white&label=jsDelivr&color=E84D3D)](https://cdn.jsdelivr.net/npm/@br1jm0h4n/epubjs/)-->
 ## 🚀 Live Demo
