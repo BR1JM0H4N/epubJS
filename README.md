@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="icon.svg" width="72" height="72" alt="epub.js logo"/>
+  <img src="icon.svg" width="72" height="72" alt="epubit.js logo"/>
 </p>
 
-<h1 align="center">epub.js</h1>
+<h1 align="center">epubit</h1>
 <p align="center">Client-side EPUB 3 builder for the browser</p>
 
 # epubit — User Manual
