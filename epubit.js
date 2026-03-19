@@ -261,7 +261,7 @@ ${bodyHtml}
       const s = document.createElement("script");
       s.src = src;
       s.onload = resolve;
-      s.onerror = () => reject(new Error(`epubJS: failed to load ${src}`));
+      s.onerror = () => reject(new Error(`epubit: failed to load ${src}`));
       document.head.appendChild(s);
     });
   }
@@ -479,7 +479,7 @@ ${bodyHtml}
      */
     updateChapter(id, title, html) {
       const ch = this._chapters.find(c => c.id === id);
-      if (!ch) throw new Error(`epubJS: chapter "${id}" not found`);
+      if (!ch) throw new Error(`epubit: chapter "${id}" not found`);
       if (title !== undefined) ch.title   = title;
       if (html  !== undefined) ch.rawHtml = html;
       return this;
@@ -619,7 +619,7 @@ ${bodyHtml}
       await this._ensureJSZip();
 
       if (!this._chapters.length) {
-        throw new Error("epubJS: cannot generate — no chapters added.");
+        throw new Error("epubit: cannot generate — no chapters added.");
       }
 
       const zip   = new JSZip();
@@ -818,7 +818,7 @@ ${bodyHtml}
     ${m.rights      ? `<dc:rights>${escXml(m.rights)}</dc:rights>` : ""}
     <dc:date>${escXml(m.date)}</dc:date>
     <meta property="dcterms:modified">${new Date().toISOString().replace(/\.\d+Z$/, "Z")}</meta>
-    <meta name="generator" content="epubJS"/>
+    <meta name="generator" content="epubit"/>
   </metadata>
   <manifest>
     ${manifest.join("\n    ")}
@@ -991,7 +991,7 @@ ${entries}
       if (typeof JSZip !== "undefined") return;
       await loadScript(JSZIP_CDN);
       if (typeof JSZip === "undefined") {
-        throw new Error("epubJS: JSZip could not be loaded. Please include it manually.");
+        throw new Error("epubit: JSZip could not be loaded. Please include it manually.");
       }
     }
   }
