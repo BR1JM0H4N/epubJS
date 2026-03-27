@@ -961,7 +961,7 @@ ${items.join("\n")}
       const entries = this._chapters.map((ch, i) =>
         `      <li>
         <a href="${escAttr(ch.id)}.xhtml">
-          <span class="ch-num">${i + 1}.</span>${escXml(ch.title)}
+          <span class="ch-num"></span>${escXml(ch.title)}
         </a>
       </li>`
       ).join("\n");
